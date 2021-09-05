@@ -1,0 +1,16 @@
+@import "./../../assets/scss/variables/color";
+
+.card-vertical {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  box-shadow: 0 2px 2px 0 #979797;
+
+  &__text {
+    padding: 20px 30px;
+
+    .category {
+      color: $primary-color;
+    }
+  }
+}

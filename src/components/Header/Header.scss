@@ -1,0 +1,28 @@
+@import "./src/assets/scss/variables/color";
+
+
+.header {
+  padding: 20px;
+  &__logo {
+    transition: transform 300ms;
+    position: relative;
+    font-weight: 700;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 70%;
+      left: 0;
+      background-color: $primary-color;
+      padding-top: 2px;
+      width: 100%;
+      z-index: -1;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+
+}

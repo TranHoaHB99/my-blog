@@ -1,5 +1,10 @@
 @import "./assets/scss/variables/color";
 @import "./assets/scss/mixins/responsive";
+
+* {
+  font-family: 'PT Serif', serif;
+}
+
 .containerFluid {
   width: 100%;
   margin-left: auto;
@@ -19,5 +24,29 @@
   }
   @include respond(big-desktop) {
     max-width: 1140px;
+  }
+}
+
+.nav {
+  &__link {
+    color: $black-color;
+    text-decoration: none;
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      color: inherit;
+    }
+
+    &--active {
+      color: $primary-color;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
   }
 }

@@ -1,0 +1,30 @@
+.homepage {
+  &__banner {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &:after {
+      padding-top: calc(50% * (2112 / 2748));
+      display: block;
+      content: '';
+    }
+  }
+
+  .content {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    &__left {
+      width: 70%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+    }
+
+    &__right {
+      width: 20%;
+    }
+  }
+}

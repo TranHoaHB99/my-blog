@@ -1,0 +1,23 @@
+@import "./src/assets/scss/variables/color";
+
+.footer {
+  &__top {
+    .header-text {
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+  }
+
+  &__icons {
+    padding: 20px 0;
+
+    .icon {
+      margin: 0 10px;
+    }
+  }
+
+  &__bottom {
+    border-top: 3px solid $primary-color;
+    padding-top: 20px;
+  }
+}
